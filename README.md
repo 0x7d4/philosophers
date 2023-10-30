@@ -1,11 +1,11 @@
 # philosophers
-Dining philosophers problem with twist of threads and mutexes
+Dining philosophers problem with twist of threads and mutexes.
+
+![Dining philosophers ](./visual.drawio.svg)
 
 ## Brief
 This project aims to provide a solution for a multi-threaded system AKA dining philosophers problem.
 Assuming we have a table with N philos and forks, we should try to keep the agents alive as long as they could not eat anymore (e.g. the forks are occupied).
-
-![Dining philosophers ](./visual.drawio.svg)
 
 ## Methodology
 The forks are locks (mutexes) and each philo has a seperate thread; I have used `pthread` module to work with threads and mutexes.
