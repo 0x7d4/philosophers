@@ -8,7 +8,7 @@ Assuming we have a table with N philos and forks, we should try to keep the agen
 ![Dining philosophers ](./visual.drawio.svg)
 
 ## Methodology
-The forks are out locks (mutexes) and each philo has a seperate thread; I have used `pthread` module to work with threads and mutexes.
+The forks are locks (mutexes) and each philo has a seperate thread; I have used `pthread` module to work with threads and mutexes.
 To make philosophers avoid dying, I have used the following policy on which fork is picked up:
 
 $$
