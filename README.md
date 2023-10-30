@@ -10,9 +10,11 @@ Assuming we have a table with N philos and forks, we should try to keep the agen
 ## Methodology
 The forks are out locks (mutexes) and each philo has a seperate thread; I have used `pthread` module to work with threads and mutexes.
 To make philosophers avoid dying, I have used the following policy on which fork is picked up:
+
 $$
 fork_{right}(i, n) = (i + (i \mod 2)) \mod n
 $$
+
 Where:
 - `i` is the index of the target philosopher
 - `n` is the number of the forks
